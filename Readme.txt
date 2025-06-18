@@ -315,7 +315,30 @@ EVEN IF THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
 DAMAGES.
 
 
+NOTES FOR PROGRAMMERS
 
+You may find problems while trying to run/build the project locally.
+A common one is TVolumeSlider not been found.
+To fix that, check and Configure the Library Path and Browse Path
+
+What to do: 
+You need to tell Delphi 12 where the file containing  TVolumeSlider
+and .dcu (Delphi Compiled Unit) files are located (valid for other errors).
+
+Steps:
+
+1 - In Delphi 12, go to Tools > Options.
+2 - On the left side, navigate to Language > Delphi Options > Library.
+3 - In the "Library path" section, click the ellipsis button (...) to add new paths.
+4 - Add the full path to the folder where the TVolumeSlider.pas file is located 
+  (and any other related files, such as TAISoundOut.pas). 
+  It is crucial that Delphi can find these files.
+5 - In the "Browse path" section (just below the Library path), do the same. 
+  This helps the IDE find class and method declarations for Code Insight.
+6 - Click OK to save the changes.
+7 - Restart Delphi 12 to ensure the new paths are loaded.
+8 - Try opening the project again.
+9 - For some reason I needed to repeat steps 7 and 8 twice after reseting all changes on local branch.
 
 
 END OF DOCUMENT
