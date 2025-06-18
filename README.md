@@ -14,6 +14,5 @@ Once you have cloned this project locally, enter the directory and create
 a virtual environment with python 3.13. I have uses pyenv.
 ```
 pyenv virtualenv 3.13.1 morserunner
-brew install python-tk
-brew install tk-dev
+pip install -r requirements.txt
 ```
